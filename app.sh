@@ -22,28 +22,29 @@ sudo apt-get -y update
 echo "end updating!"
 
 echo "starting to install apt-get applications …"
-for pkg in ${APT_GET_PACKAGES[@]}
+for pkg in ${APT_GET_PACKAGES[@]};
 do
-echo $pkg
-is_package_exists="$(is_package_exists "$pkg")"
-if [[ "$is_package_exists" == "1" ]]; then
-  echo "Package $pkg already installed."
- else
-     sudo apt-get install -y $pkg
- fi
+    echo $pkg
+    is_package_exists="$(is_package_exists "$pkg")"
+    
+    if [[ "$is_package_exists" == "1" ]]; then
+        echo "Package $pkg already installed."
+    else
+        sudo apt-get install -y $pkg
+    fi
 done
 echo "finished to install apt-get applications!"
 
 echo "starting to install snap applications …"
-for pkg in ${SNAP_PACKAGES[@]}
+for pkg in ${SNAP_PACKAGES[@]};
 do
     #echo $pkg
     is_package_exists "$pkg"
     is_package_exists_ret=$ret_value
     
-    echo "is_package_exists_ret="$is_package_exists_ret #debugger 
+    #echo "is_package_exists_ret="$is_package_exists_ret #debugger 
 
-    if [[ $is_package_exists_ret == 0 ]]; then
+    if [[ $is_package_exists_ret==0 ]]; then
         echo "Package $pkg already installed."
     else
         echo "start install snap"
@@ -52,4 +53,6 @@ do
 done
 echo "finished to install snap applications!"
 
-echo “finished!”
+echo "finished!"
+
+exit 0
