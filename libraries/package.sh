@@ -16,7 +16,7 @@ is_snap_package_exists(){
 
     is_contain_string "$lower_clear_package_result" "installed:"
     local is_package_exists=$?
-    echo "in_span:is_package_exists="$is_package_exists
+    #echo "in_span:is_package_exists="$is_package_exists
     ret_value=$is_package_exists
 }
 
@@ -33,7 +33,7 @@ is_dpkg_package_exists(){
     
     is_contain_string "$lower_clear_package_result" "installed"
     is_package_exists=$?
-    echo "is_package_exists="$is_package_exists
+    #echo "is_package_exists="$is_package_exists
     ret_value=$is_package_exists
 }
 
@@ -47,8 +47,8 @@ is_package_exists(){
     is_dpkg_package_exists "$1"
     local is_dpkg_package_exists_ret=$ret_value
     
-    echo "is_snap_package_exists_ret="$is_snap_package_exists_ret #debugger
-    echo "is_dpkg_package_exists_ret="$is_dpkg_package_exists_ret #debugger
+    #echo "is_snap_package_exists_ret="$is_snap_package_exists_ret #debugger
+    #echo "is_dpkg_package_exists_ret="$is_dpkg_package_exists_ret #debugger
 
     if [[ "$is_dpkg_package_exists_ret" == "0" || "$is_snap_package_exists_ret" == "0" ]]; then
         #echo "$package_name installed" #debug mode

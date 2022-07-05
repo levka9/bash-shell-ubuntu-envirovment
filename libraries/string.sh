@@ -15,7 +15,7 @@ is_contain_string(){
     local string="$1"
     local substring="$2"
 
-    if [[ $string == *"$substring"* ]]; then
+    if [[ "$string" == *"$substring"* ]]; then
         return 0
     else
         return 1

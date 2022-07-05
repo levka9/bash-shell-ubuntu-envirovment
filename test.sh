@@ -31,7 +31,16 @@ fi
 # string array
 PACKAGES=("app1" "app2" "--classic app3" "app4")
 
-for pkg in "${PACKAGES[@]}"
+for pkg in "${PACKAGES[@]}";
 do
 	echo "pgk=" $pkg
 done
+
+str1="1"
+str2="1"
+ 
+if [[ "$str1" == "$str2" ]]; then
+    echo "Strings are equal"
+else
+    echo "Strings are not equal"
+fi
