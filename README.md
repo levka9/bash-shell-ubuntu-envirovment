@@ -11,3 +11,5 @@ SNAP_PACKAGES=("chromium" "--classic code" "vlc" "whatsapp-app" "telegram-deskto
 
 Run this script in your terminal with this command:
 bash app.sh
+
+Tested on Ubuntu: v22.04
