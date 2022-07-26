@@ -10,7 +10,7 @@ echo "start …"
 # custom list of the packages to install 
 ADD_APT_REPOSITORY=("ppa:gerardpuig/ppa" "ppa:inkscape.dev/stable" "ppa:hluk/copyq")
 APT_GET_PACKAGES=("snapd" "snapd-xdg-open" "htop" "torbrowser-launcher" "git-all" "copyq" "filezilla" "ubuntu-cleaner" "inkscape" "peek" "qbittorrent")
-SNAP_PACKAGES=("chromium" "--classic code" "vlc" "whatsapp-app" "telegram-desktop" "skype" "youtube-music-desktop-app" "wps-office" "4ktube" "notepad-plus-plus" "postman" "dotnet-sdk --classic --channel=6.0")
+SNAP_PACKAGES=("curl" "chromium" "--classic code" "vlc" "whatsapp-app" "telegram-desktop" "skype" "youtube-music-desktop-app" "wps-office" "4ktube" "notepad-plus-plus" "postman" "dotnet-sdk --classic --channel=6.0")
 
 # repository info
 # sudo add-apt-repository -y ppa:gerardpuig/ppa #ubuntu-cleaner
