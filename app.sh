@@ -9,8 +9,8 @@ echo "start …"
 
 # custom list of the packages to install 
 ADD_APT_REPOSITORY=("ppa:gerardpuig/ppa" "ppa:inkscape.dev/stable" "ppa:hluk/copyq" "ppa:serge-rider/dbeaver-ce")
-APT_GET_PACKAGES=("snapd" "snapd-xdg-open" "htop" "torbrowser-launcher" "git-all" "copyq" "filezilla" "ubuntu-cleaner" "inkscape" "peek" "qbittorrent" "gufw" "dbeaver-ce")
-SNAP_PACKAGES=("curl" "chromium" "--classic code" "vlc" "whatsapp-app" "telegram-desktop" "skype" "youtube-music-desktop-app" "wps-office" "4ktube" "notepad-plus-plus" "postman" "dotnet-sdk --classic --channel=6.0" "dbeaver-ce")
+APT_GET_PACKAGES=("snapd" "snapd-xdg-open" "htop" "torbrowser-launcher" "git-all" "copyq" "filezilla" "ubuntu-cleaner" "inkscape" "peek" "qbittorrent" "gufw" "dbeaver-ce" "dotnet-sdk-6.0" "dotnet-runtime-6.0" "clamav")
+SNAP_PACKAGES=("curl" "chromium" "--classic code" "vlc" "whatsapp-app" "telegram-desktop" "skype" "youtube-music-desktop-app" "wps-office" "4ktube" "notepad-plus-plus" "postman" "dbeaver-ce")
 
 # repository info
 # sudo add-apt-repository -y ppa:gerardpuig/ppa #ubuntu-cleaner
