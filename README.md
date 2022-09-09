@@ -23,6 +23,6 @@ bash app-programming.sh
 Program details:
 DBeaver-ce - Free multi-platform database tool for developers, database administrators, analysts and all people who need to work with databases. Supports all popular databases: MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, MS Access, Teradata, Firebird, Apache Hive, Phoenix, Presto, etc. https://dbeaver.io/download/
 
-
+ClamAV - is an open source (GPLv2) anti-virus toolkit, designed especially for e-mail scanning on mail gateways.
 
 Tested on Ubuntu: v22.04
