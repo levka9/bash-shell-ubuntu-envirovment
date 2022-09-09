@@ -2,6 +2,10 @@
 clear
 echo "start..."
 
+#todo: check if ufw exists. 
+#if yes then continue
+#if not write the message: echo "Please at first run app-[name].sh script."   
+
 # activate ufw firewall
 ufwStatus=$(sudo ufw status)
 echo "ufw: $ufwStatus"
