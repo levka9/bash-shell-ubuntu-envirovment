@@ -9,7 +9,7 @@ echo "start …"
 
 # custom list of the packages to install 
 ADD_APT_REPOSITORY=("ppa:gerardpuig/ppa" "ppa:inkscape.dev/stable" "ppa:hluk/copyq" "ppa:serge-rider/dbeaver-ce")
-APT_GET_PACKAGES=("snapd" "snapd-xdg-open" "htop" "curl" "torbrowser-launcher" "git-all" "copyq" "filezilla" "ubuntu-cleaner" "inkscape" "peek" "gufw" "dbeaver-ce" "dotnet-sdk-6.0" "dotnet-runtime-6.0" "clamav" "virtualbox")
+APT_GET_PACKAGES=("snapd" "snapd-xdg-open" "htop" "curl" "torbrowser-launcher" "git-all" "copyq" "filezilla" "ubuntu-cleaner" "inkscape" "peek" "gufw" "dbeaver-ce" "dotnet-sdk-6.0" "dotnet-runtime-6.0" "clamav clamav-daemon" "virtualbox")
 SNAP_PACKAGES=("chromium" "--classic code" "whatsapp-app" "telegram-desktop" "skype" "notepad-plus-plus" "postman")
 
 # repository info
