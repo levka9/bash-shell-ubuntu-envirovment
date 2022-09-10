@@ -53,6 +53,8 @@ do
 done
 echo "finished to install snap applications!"
 
+bash enable-programs.sh
+
 echo "finished!"
 
 exit 0

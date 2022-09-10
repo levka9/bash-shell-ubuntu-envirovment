@@ -1,6 +1,5 @@
 #!/bin/bash
-clear
-echo "start..."
+echo "start enable programs..."
 
 #todo: check if ufw exists. 
 #if yes then continue
@@ -11,7 +10,7 @@ ufwStatus=$(sudo ufw status)
 echo "ufw: $ufwStatus"
 
 if [[ "$ufwStatus" == *"Status: inactive"* ]]; then
-    echo "activate ufw ..." 
+    echo "enable ufw ..." 
     sudo ufw enable
 fi
 
@@ -21,3 +20,5 @@ sudo systemctl stop clamav-freshclam > /dev/null
 sudo freshclam > /dev/null
 sudo systemctl enable clamav-freshclam --now > /dev/null 2>&1
 echo "antivirus update finished!"
+
+exit 0
