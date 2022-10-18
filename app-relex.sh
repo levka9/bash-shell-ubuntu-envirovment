@@ -10,7 +10,7 @@ echo "start …"
 # custom list of the packages to install 
 ADD_APT_REPOSITORY=()
 APT_GET_PACKAGES=("snapd" "snapd-xdg-open" "curl" "htop" "torbrowser-launcher" "copyq" "ubuntu-cleaner" "qbittorrent" "gufw" "clamav clamav-daemon")
-SNAP_PACKAGES=("chromium" "vlc" "whatsapp-app" "telegram-desktop" "skype" "youtube-music-desktop-app" "4ktube" "notepad-plus-plus")
+SNAP_PACKAGES=("vlc" "whatsapp-app" "telegram-desktop" "skype" "youtube-music-desktop-app" "4ktube" "notepad-plus-plus")
 
 echo "starting to update packages ..."
 for pkg in "${ADD_APT_REPOSITORY[@]}";
@@ -52,6 +52,12 @@ do
     fi
 done
 echo "finished to install snap applications!"
+
+echo "local program installation"
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo rm google-chrome-stable_current_amd64.deb
+echo "finish the local program installation"
 
 bash enable-programs.sh
 
