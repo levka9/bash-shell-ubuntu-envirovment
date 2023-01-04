@@ -27,4 +27,7 @@ ClamAV - is an open source (GPLv2) anti-virus toolkit, designed especially for e
 
 Timeshift - backup and restore the system
 
+Gparted - is a partition editor for graphically managing your disk partitions.
+
+
 Tested on Ubuntu: v22.04
