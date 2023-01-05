@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ret_value=""
 
 get_snap_package_info(){

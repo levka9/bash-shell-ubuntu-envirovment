@@ -54,12 +54,10 @@ done
 echo "finished to install snap applications!"
 
 echo "local program installation"
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo rm google-chrome-stable_current_amd64.deb
+bash local-program/google-chrome.sh
 echo "finish the local program installation"
 
-bash enable-programs.sh
+bash /module/enable-programs.sh
 
 echo "finished!"
 
