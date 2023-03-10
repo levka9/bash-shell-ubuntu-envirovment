@@ -63,7 +63,8 @@ bash local-program/google-chrome.sh
 bash local-program/dotnet-7-0.sh
 echo "finish the local program installation"
 
-bash /module/enable-programs.sh
+sudo apt -y autoremove
+bash module/enable-programs.sh
 
 echo "finished!"
 
